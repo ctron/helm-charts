@@ -3,6 +3,23 @@ entries:
   ditto-operator:
   - apiVersion: v2
     appVersion: 0.1.1
+    created: "2020-07-28T09:28:10.664178445Z"
+    description: A Helm chart deploying the Ditto operator
+    digest: a1625722048ffab353bdb83282ff0c488816fff2a4c1d9ed3a2ef01564bfa5bd
+    home: https://github.com/ctron/ditto-operator
+    icon: https://www.eclipse.org/ditto/images/ditto.svg
+    kubeVersion: '>= 1.14.0'
+    maintainers:
+    - email: ctron@dentrassi.de
+      name: ctron
+      url: https://dentrassi.de
+    name: ditto-operator
+    type: application
+    urls:
+    - https://github.com/ctron/helm-charts/releases/download/ditto-operator-0.1.5/ditto-operator-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 0.1.1
     created: "2020-07-27T08:17:22.813788235Z"
     description: A Helm chart deploying the Ditto operator
     digest: a064e5f5a84a951b45750943a6be5f60f1507b0814f88c77058e78fa6096abce
