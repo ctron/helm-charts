@@ -67,4 +67,22 @@ entries:
     urls:
     - https://github.com/ctron/helm-charts/releases/download/ditto-operator-0.1.3/ditto-operator-0.1.3.tgz
     version: 0.1.3
+  hawkbit-operator:
+  - apiVersion: v2
+    appVersion: 0.3.0-m3
+    created: "2020-08-19T17:00:29.852430373Z"
+    description: A Helm chart deploying the hawkBit operator
+    digest: 800ce7101f1d16e32e157035151096cb2577add9470ada4ce98d8d1269e29673
+    home: https://github.com/ctron/hawkbit-operator
+    icon: https://www.eclipse.org/hawkbit/images/hawkbit_icon.png
+    kubeVersion: '>= 1.14.0'
+    maintainers:
+    - email: ctron@dentrassi.de
+      name: ctron
+      url: https://dentrassi.de
+    name: hawkbit-operator
+    type: application
+    urls:
+    - https://github.com/ctron/helm-charts/releases/download/hawkbit-operator-0.1.0/hawkbit-operator-0.1.0.tgz
+    version: 0.1.0
 generated: "2020-07-24T15:45:36.489753134Z"
