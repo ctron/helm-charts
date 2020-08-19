@@ -1,0 +1,29 @@
+
+Create a new hawkBit instance:
+
+$ kubectl apply -f - << __EOF__
+kind: Hawkbit
+apiVersion: iot.eclipse.org/v1alpha1
+metadata:
+  name: default
+spec:
+  database:
+    mariadb:
+      database: hawkbit
+      host: hawkbit-db-mysql
+      username: hawkbit
+      passwordSecret:
+        name: hawkbit-db-mysql
+        field: mysql-password
+  rabbit:
+    host: hawkbit-rabbit-rabbitmq
+    username: hawkbit
+    passwordSecret:
+      name: hawkbit-rabbit-rabbitmq
+      field: rabbitmq-password
+__EOF__
+
+The initial admin credentials can be extracted by executing:
+
+  kubectl get secret default-admin -o jsonpath='{.data.adminUsername}' | base64 -d
+  kubectl get secret default-admin -o jsonpath='{.data.adminPassword}' | base64 -d | cut -c7-
