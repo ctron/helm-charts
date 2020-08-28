@@ -69,6 +69,23 @@ entries:
     version: 0.1.3
   hawkbit-operator:
   - apiVersion: v2
+    appVersion: 0.1.3
+    created: "2020-08-28T16:30:22.273323632Z"
+    description: A Helm chart deploying the hawkBit operator
+    digest: c7c769778bd9b4819b2d7211492a6a86d0e5c5713aefab4ae36339c610f11eb1
+    home: https://github.com/ctron/hawkbit-operator
+    icon: https://www.eclipse.org/hawkbit/images/hawkbit_icon.png
+    kubeVersion: '>= 1.14.0'
+    maintainers:
+    - email: ctron@dentrassi.de
+      name: ctron
+      url: https://dentrassi.de
+    name: hawkbit-operator
+    type: application
+    urls:
+    - https://github.com/ctron/helm-charts/releases/download/hawkbit-operator-0.1.3/hawkbit-operator-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
     appVersion: 0.1.2
     created: "2020-08-26T10:16:23.14421801Z"
     description: A Helm chart deploying the hawkBit operator
