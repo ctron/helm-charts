@@ -1,0 +1,10 @@
+{{ $ref := ( dict "root" . "name" "gateway" ) }}
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: {{ include "streamsheets.name" $ref }}
+  labels:
+    {{- include "streamsheets.labels" $ref | nindent 4 }}
+data:
+  gateway.json: |
+    {{- tpl ( .Files.Get "config/gateway/gateway.json" ) . | nindent 4 }}
