@@ -250,4 +250,34 @@ entries:
     urls:
     - https://github.com/ctron/helm-charts/releases/download/hawkbit-operator-0.1.0/hawkbit-operator-0.1.0.tgz
     version: 0.1.0
+  streamsheets:
+  - apiVersion: v2
+    appVersion: 2.4.0
+    created: "2021-07-08T11:06:59.232935297Z"
+    dependencies:
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: "10"
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: "14"
+    description: Streamsheets deployment for Kubernetes
+    digest: 80613004834f212e5faa0d73bf35c1b995a081a7274a8e41ee08590df2128464
+    home: https://github.com/ctron/streamsheets-kubernetes
+    icon: https://github.com/eclipse/streamsheets/raw/master/assets/title.png
+    keywords:
+    - IoT
+    kubeVersion: '>= 1.19.0'
+    maintainers:
+    - email: ctron@dentrassi.de
+      name: ctron
+      url: https://dentrassi.de
+    name: streamsheets
+    sources:
+    - https://github.com/ctron/streamsheets-kubernetes
+    - https://github.com/eclipse/streamsheets
+    type: application
+    urls:
+    - https://github.com/ctron/helm-charts/releases/download/streamsheets-0.1.0/streamsheets-0.1.0.tgz
+    version: 0.1.0
 generated: "2020-07-24T15:45:36.489753134Z"
