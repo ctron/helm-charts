@@ -298,6 +298,35 @@ entries:
   streamsheets:
   - apiVersion: v2
     appVersion: 2.4.0
+    created: "2021-09-10T12:55:59.130910156Z"
+    dependencies:
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: ^10
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ^14
+    description: Streamsheets deployment for Kubernetes
+    digest: fb9746767a0548ce00eec608b3d8a989c1606d8ae27eec8471a814864b6389ee
+    home: https://github.com/ctron/streamsheets-kubernetes
+    icon: https://github.com/eclipse/streamsheets/raw/master/assets/title.png
+    keywords:
+    - IoT
+    kubeVersion: '>= 1.19.0'
+    maintainers:
+    - email: ctron@dentrassi.de
+      name: ctron
+      url: https://dentrassi.de
+    name: streamsheets
+    sources:
+    - https://github.com/ctron/streamsheets-kubernetes
+    - https://github.com/eclipse/streamsheets
+    type: application
+    urls:
+    - https://github.com/ctron/helm-charts/releases/download/streamsheets-0.2.0/streamsheets-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 2.4.0
     created: "2021-08-17T15:24:29.561930952Z"
     dependencies:
     - name: mongodb
